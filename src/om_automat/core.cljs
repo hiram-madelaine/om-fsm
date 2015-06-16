@@ -51,8 +51,10 @@
       (dom/div #js {:className "container"}
                (dom/div #js {:className "well"}
                         (dom/p #js {}
-                               "This is a small Finite-State Machine with 5 transitions
-                               The view is simple : there is a button for each transition"))
+                               "This is a small Finite-State Machine with 5 transitions.
+                               The view is simple : there is a button for each transition.
+                               Each action can be called only once expect action Three.
+                               When the FSM reaches an accepted state (End State) it starts form the begining with the initial state."))
                (dom/div #js {:className "well"}
                 (b/toolbar {}
                            (when (display? fsm-state :start)
